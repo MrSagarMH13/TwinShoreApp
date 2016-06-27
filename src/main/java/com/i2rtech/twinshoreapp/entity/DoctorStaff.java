@@ -47,7 +47,7 @@ public class DoctorStaff implements Serializable {
     @Column(name = "FullName")
     private String fullName;
     @Column(name = "Gender")
-    private Character gender;
+    private String gender;
     @Column(name = "DateOfBirth")
     @Temporal(TemporalType.DATE)
     private Date dateOfBirth;
@@ -64,7 +64,7 @@ public class DoctorStaff implements Serializable {
     @Column(name = "EmailIDSecondary")
     private String emailIDSecondary;
     @Column(name = "DoctorStaffRole")
-    private Character doctorStaffRole;
+    private String doctorStaffRole;
     @Size(max = 45)
     @Column(name = "Qualification")
     private String qualification;
@@ -119,11 +119,11 @@ public class DoctorStaff implements Serializable {
         this.fullName = fullName;
     }
 
-    public Character getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Character gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -175,11 +175,11 @@ public class DoctorStaff implements Serializable {
         this.emailIDSecondary = emailIDSecondary;
     }
 
-    public Character getDoctorStaffRole() {
+    public String getDoctorStaffRole() {
         return doctorStaffRole;
     }
 
-    public void setDoctorStaffRole(Character doctorStaffRole) {
+    public void setDoctorStaffRole(String doctorStaffRole) {
         this.doctorStaffRole = doctorStaffRole;
     }
 

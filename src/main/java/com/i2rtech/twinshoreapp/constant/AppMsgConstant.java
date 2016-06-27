@@ -26,6 +26,6 @@ public interface AppMsgConstant {
     public String UPDATE_SUCCESS_TEXT = "SUCCESS_IN_UPDATION";
     public String SUCCESS_MESSAGE = "SUCCESS";
     public String FAILURE_MESSAGE = "FAILURE";
-    public String VALID_URL_FAILURE_TEXT = "URL_FAILURE";
+    public String VALID_URL_FAILURE_TEXT = "Permission Denied : Please contact with admin";
     public String VALID_URL_SUCCESS_TEXT = "URL_SUCCESS";
 }

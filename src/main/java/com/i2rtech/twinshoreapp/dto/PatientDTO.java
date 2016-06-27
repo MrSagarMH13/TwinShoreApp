@@ -21,6 +21,7 @@ public class PatientDTO {
     private String sMSPhoneSecondary;
     private String emailIDPrimary;
     private String emailIDSecondary;
+    private String diagnosis;
     private String loginPersonID;
     private String createdDateTime;
     private String createdPersonID;
@@ -145,6 +146,14 @@ public class PatientDTO {
 
     public void setLastUpdatedPersonID(String lastUpdatedPersonID) {
         this.lastUpdatedPersonID = lastUpdatedPersonID;
+    }
+
+    public String getDiagnosis() {
+        return diagnosis;
+    }
+
+    public void setDiagnosis(String diagnosis) {
+        this.diagnosis = diagnosis;
     }
 
 }

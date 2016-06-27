@@ -17,11 +17,22 @@ public abstract class JNDIService {
         PatientService patientService = null;
         try {
             Context context = getInitialContext();
-            patientService = (PatientService) context.lookup("java:global/Zchromo/PatientServiceBean");
+            patientService = (PatientService) context.lookup("java:global/TwinShoreApp/PatientServiceBean");
         } catch (NamingException ex) {
             Logger.getLogger(PatientService.class.getName()).log(Level.SEVERE, null, ex);
         }
         return patientService;
+    }
+    
+    public final static LoginService getLoginService() {
+        LoginService loginService = null;
+        try {
+            Context context = getInitialContext();
+            loginService = (LoginService) context.lookup("java:global/TwinShoreApp/LoginServiceBean");
+        } catch (NamingException ex) {
+            Logger.getLogger(LoginService.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return loginService;
     }
 
     private static Context getInitialContext() {

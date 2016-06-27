@@ -23,7 +23,7 @@ import javax.ws.rs.PUT;
  *
  * @author mrsagar
  */
-@Path("/")
+@Path("login")
 public class LoginResource extends AppResource {
 
     @Context

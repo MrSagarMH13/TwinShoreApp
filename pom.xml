@@ -16,19 +16,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>
-            <version>2.5.1</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-web-api</artifactId>
-            <version>6.0</version>
-            <scope>provided</scope>
-        </dependency>
-        
-        <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId> 
             <version>4.1.0.Final</version>
@@ -81,6 +68,12 @@
             <version>2.5.1</version>
         </dependency>
         <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>6.0</version>
+            <!--            <scope>provided</scope>-->
+        </dependency>
+        <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.2.4</version>
@@ -96,6 +89,25 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.0</version>
         </dependency>  
+        <!--        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.12.16</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>jmxtools</artifactId>
+                    <groupId>com.sun.jdmk</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>jmxri</artifactId>
+                    <groupId>com.sun.jmx</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>mail</artifactId>
+                    <groupId>javax.mail</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>-->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -125,11 +137,58 @@
             <artifactId>commons-codec</artifactId>
             <version>1.5</version>
         </dependency>
+        <!-- Java Mail API -->
+        <!--        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.5</version>
+        </dependency>-->
+        <!-- JODA date time API -->  
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.3</version>
+        </dependency>
+        
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <version>1.8.3</version>
         </dependency>
+
+        
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <!-- Dependany added for mandril api -->
+        <!--        <dependency>
+            <groupId>com.mandrillapp.wrapper.lutung</groupId>
+            <artifactId>lutung</artifactId>
+            <version>0.0.5</version>
+            <type>jar</type>
+        </dependency>-->
+        <!-- DEPENDENCY FOR THUMBNAIL IMAGES-->
+        <!--        <dependency>
+            <groupId>org.imgscalr</groupId>
+            <artifactId>imgscalr-lib</artifactId>
+            <version>4.2</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>-->
+        
+        <dependency>
+            <groupId>com.ganyo</groupId>
+            <artifactId>gcm-server</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        
     </dependencies>
 
     <build>

@@ -30,7 +30,7 @@ public class PatientResource extends AppResource {
     @Context
     private UriInfo context;
 
-    PatientCtrl patientCtrl;
+    private final PatientCtrl patientCtrl;
 
     /**
      * Creates a new instance of PatientResource
@@ -43,6 +43,8 @@ public class PatientResource extends AppResource {
     @Path("/addPatient")
     @Produces(MediaType.APPLICATION_JSON)
     public String addPatient(String patientDataString) {
+        setHeaders();
+        patientCtrl.setAppRequest(request);
         PatientDTO patientDTO = (PatientDTO) JsonConverter.fromJsonToDTO(patientDataString, PatientDTO.class);
         String addPatientResponse = patientCtrl.addPatient(patientDTO);
         return addPatientResponse;

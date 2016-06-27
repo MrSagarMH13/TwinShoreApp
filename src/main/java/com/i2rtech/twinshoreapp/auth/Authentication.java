@@ -57,12 +57,12 @@ public class Authentication {
         return false;
     }
 
-    public HttpServletRequest getApprequest() {
+    public HttpServletRequest getAppRequest() {
         return apprequest;
     }
 
-    public void setApprequest(HttpServletRequest apprequest) {
-        this.apprequest = apprequest;
+    public void setAppRequest(HttpServletRequest request) {
+        apprequest = request;
     }
 
     public String getIPFromRequest(HttpServletRequest request) {

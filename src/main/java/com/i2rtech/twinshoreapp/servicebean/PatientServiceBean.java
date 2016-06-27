@@ -76,7 +76,7 @@ public class PatientServiceBean implements PatientService {
         }
         patient.setLastUpdatedDateTime(AppDateUtils.getCurrentDateAndTime());
         patient.setLastUpdatedPersonID(Integer.parseInt(patientDTO.getLoginPersonID()));
-        patient.setFullName(patient.getFullName());
+        patient.setFullName(patientDTO.getFullName());
         if (StringUtils.isNotBlank(patientDTO.getsMSPhonePrimary())) {
             patient.setSMSPhonePrimary(new BigInteger(patientDTO.getsMSPhonePrimary()));
         } else {
